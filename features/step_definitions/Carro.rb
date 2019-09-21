@@ -51,6 +51,8 @@ Dado("que eu acessei a tela de automovel vou preencher os dados de {string}, {st
     page = Automate.new()
     page.Email.send_keys(Faker::Internet.email)
     page.Telefone.send_keys(Faker::Number.number(digits: 8))
+    sleep 2
+    #page.Usuario.send_keys(Faker::Internet.username)
     page.Usuario.send_keys(Faker::Internet.username)
     $senha = Faker::Internet.password(min_length: 8)
     sleep 3

@@ -12,10 +12,10 @@ require 'faker'
 
 Capybara.configure do |config|
     # digo que o driver padrao eh o do selenium.
-    Capybara.default_driver = :selenium_chrome
+Capybara.default_driver = :selenium_chrome
     
     # defino a url padrao.
-    config.app_host = "https://www.google.com"
+config.app_host = "https://www.google.com"
     # defino o tempo maximo de espera para os elementos.
-    config.default_max_wait_time = 30
+config.default_max_wait_time = 30
   end
