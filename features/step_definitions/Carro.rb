@@ -29,7 +29,7 @@ Dado("que eu acessei a tela de automovel vou preencher os dados de {string}, {st
     page.HobbieSky.set(true)
     page.NextProduct.click
     sleep 2
-    page.DataInicio.send_keys("12/01/2019")
+    page.DataInicio.send_keys("12/12/2020")
     page.ValorSeguro.select("5.000.000,00")  
     page.BonusSeguro.select("Bonus 1")
     page.DanosSeguro.select("Full Coverage")
